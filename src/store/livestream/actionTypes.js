@@ -1,0 +1,3 @@
+export const START_LIVE_STREAM = 'START_LIVE_STREAM';
+export const END_LIVE_STREAM = 'END_LIVE_STREAM';
+export const API_ERROR = 'API_ERROR';

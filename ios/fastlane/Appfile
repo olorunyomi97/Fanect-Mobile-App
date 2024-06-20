@@ -1,0 +1,8 @@
+app_identifier("com.fanect.io") # The bundle identifier of your app
+apple_id("debaryour@gmail.com") # Your Apple email address
+
+itc_team_id("123460982") # App Store Connect Team ID
+team_id("4ZCKT4W8J5") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

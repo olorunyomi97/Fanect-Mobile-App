@@ -1,0 +1,18 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    increment_build_number(xcodeproj: "fanectApp.xcodeproj")
+    build_app(workspace: "fanectApp.xcworkspace", scheme: "fanectApp")
+    upload_to_testflight
+  end
+end
+
+lane :icon do
+  appicon(
+    appicon_image_file: 'fastlane/metadata/app_icon.png',
+    appicon_devices: [ :iphone ],
+    appicon_path: 'fanectApp/Images.xcassets',
+  )
+end
